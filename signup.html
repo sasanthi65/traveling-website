@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <script>
+            function submit(){
+                alert("Successfully Registered");
+                location.href = './index.html'; 
+            }
+        </script>
+    </head>
+    <body class="signup-account">
+        <div class="sign-form">
+            <div class="form-title">Sign Up</div>
+            <div class="input-container item1">
+                <input id="username" class="input" type="text" placeholder="Username" />
+                <label for="username">Username</label>
+            </div>
+            <div class="input-container item2">
+                <input id="email" class="input" type="text" placeholder="Email" />
+                <label for="email">Email</label>
+            </div>
+            <div class="input-container item3">
+                <input id="password" class="input" type="password" placeholder="Password" />
+                <label for="password" >Password</label>
+            </div>
+            <div class="input-container item4">
+              <input id="confirm-password" class="input" type="password" placeholder="Confirm Password" />
+              <label for="confirm-password">Confirm Password</label>
+            </div>
+      
+            <button type="submit" class="submit" onClick=submit()>Register</button>
+        </div>
+    </body>
+</html>
